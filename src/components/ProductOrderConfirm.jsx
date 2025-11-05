@@ -4,7 +4,7 @@ import { Button } from "./reusables/Button";
 export function ProductOrderConfirm() {
   const { cart, totalAmount, handleOverlayClick, handleNewOrder } = useCart();
 
-  console.log(cart);
+  // console.log(cart);
 
   return (
     <>

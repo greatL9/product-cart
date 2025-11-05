@@ -29,7 +29,10 @@ function FilledCart({ cart, onDeleteCart, totalAmount, onConfirm }) {
     <>
       {cart.map((cartItem) => (
         <>
-          <div className="flex items-center justify-between">
+          <div
+            className="flex items-center justify-between"
+            key={cartItem.product.name}
+          >
             <div>
               <p className="font-semibold text-[1.3rem] mb-2">
                 {cartItem.product.name}
